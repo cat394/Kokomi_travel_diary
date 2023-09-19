@@ -21,7 +21,7 @@
 	<Header />
 	<Nav />
 	<main class="max-w-[900px] mx-auto">
-		<Transition url={data.url} duration={800}>
+		<Transition url={data.url} duration={650}>
 			<slot />
 		</Transition>
 	</main>
