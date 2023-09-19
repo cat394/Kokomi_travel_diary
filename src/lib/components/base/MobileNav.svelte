@@ -49,6 +49,10 @@
 		background: var(--bg-overlay);
 	}
 
+	b {
+		font-size: var(--font-size-md);
+	}
+
 	ul {
 		display: grid;
 		gap: var(--size-5);
@@ -87,6 +91,7 @@
 		padding: var(--size-6) var(--size-5);
 		color: var(--text-primary-dark);
 		-webkit-mask: var(--mask-edge-scalloped);
+		background-repeat: no-repeat;
 		font-weight: 500;
 	}
 
