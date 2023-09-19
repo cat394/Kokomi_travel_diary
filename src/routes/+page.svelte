@@ -34,7 +34,7 @@
 	<Container title="あいさつ">
 		<Greeting />
 	</Container>
-	<Container title="このサイトの楽しみ方" titlePosition="center">
+	<Container title="サイトの楽しみ方" titlePosition="center">
 		<Position center>
 			<EnjoySite />
 		</Position>

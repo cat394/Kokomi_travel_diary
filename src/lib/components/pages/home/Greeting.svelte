@@ -1,5 +1,6 @@
 <script>
 	import Sentence from '$lib/components/utils/Sentence.svelte';
+	import PageLink from '$lib/components/utils/PageLink.svelte';
 </script>
 
 <Sentence>
@@ -11,5 +12,5 @@
 	<p>
 		はじめてな事が多すぎて戸惑っちゃうこともあるかもしれないから、温かい目で見てくれたら嬉しいな。
 	</p>
-	<p>詳しいことはAboutページに書いてあるから、気になったら見てみてね！</p>
+	<p>詳しいことは<PageLink href="/about">Aboutページ</PageLink>に書いてあるから、気になったら見てみてね！</p>
 </Sentence>

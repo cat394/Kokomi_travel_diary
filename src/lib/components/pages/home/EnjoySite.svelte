@@ -16,7 +16,9 @@
 		text-align: center;
 		padding-inline: var(--size-5);
 		font-size: var(--font-size-md);
-		text-decoration: var(--primary) wavy underline;
+		text-decoration-line: underline;
+		text-decoration-style: wavy;
+		text-decoration-color: var(--primary);
 		text-decoration-thickness: 0.06em;
 	}
 </style>
