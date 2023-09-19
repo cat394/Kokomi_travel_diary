@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Pills from '$lib/components/utils/Pills.svelte';
-	import Divider from '$lib/components/utils/Divider.svelte';
 	import Pill from '$lib/components/utils/Pill.svelte';
 	import { formatDate } from '$lib/utils';
 
@@ -10,9 +9,26 @@
 <!-- SEO -->
 <svelte:head>
 	<title>{data.meta.title}</title>
+
+	<!-- Standard Meta Tags -->
+	<meta name="description" content={data.meta.description} />
+
+	<!-- Open Graph Tags -->
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={data.meta.title} />
+	<meta property="og:description" content={data.meta.description} />
+	<meta property="og:image" content={data.meta.image.url} />
+	<meta property="og:image:alt" content={data.meta.image.alt} />
+
+	<!-- Twitter Card Tags -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content={data.meta.title} />
+	<meta name="twitter:description" content={data.meta.description} />
+	<meta name="twitter:image" content={data.meta.image.url} />
+	<meta name="twitter:image:alt" content={data.meta.image.alt} />
+
 </svelte:head>
+
 
 <article>
 	<!-- Title -->
