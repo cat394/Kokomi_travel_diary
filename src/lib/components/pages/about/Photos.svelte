@@ -8,7 +8,9 @@
 		<span class="text">
 			豪華なクルーズに、きれいな景色！
 		</span>
-		<Image name="cruise_morning" />
+		<div class="image">
+			<Image name="cruise_morning" />
+		</div>
 	</li>
 	<li>
 		<span class="text">
@@ -20,7 +22,9 @@
 		<span class="text">
 			夜の海に出かけちゃったり！
 		</span>
-		<Image name="mole_night" />
+		<div class="image">
+			<Image name="mole_night" />
+		</div>
 	</li>
 </ul>
 
@@ -43,5 +47,38 @@
 
 	.text {
 		place-self: center;
+	}
+
+	@media(max-width: 768px) {
+		li:nth-child(odd) {
+			grid-template-columns: 1fr 4fr;
+			grid-template-areas: 
+				". img"
+				"text text";
+		}
+
+		li:nth-child(even) {
+			grid-template-columns: 4fr 1fr;
+			grid-template-areas: 
+				"img ."
+				"text text";
+		}
+
+		li .text {
+			grid-area: text;
+			align-self: self-start;
+		}
+
+		li:nth-child(odd) .text {
+			justify-self: self-start;
+		}
+
+		li:nth-child(even) .text {
+			justify-self: self-end;
+		}
+
+		li .image {
+			grid-area: img;
+		}
 	}
 </style>
