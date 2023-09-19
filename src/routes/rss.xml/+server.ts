@@ -23,6 +23,7 @@ export async function GET({ fetch }) {
 							<link>${config.url}/${post.slug}</link>
 							<guid isPermaLink="true">${config.url}/${post.slug}</guid>
 							<pubDate>${new Date(post.pubDate).toUTCString()}</pubDate>
+							<enclosure url=${post.image.url} type="image/webp" />
 						</item>
 					`
 					)
