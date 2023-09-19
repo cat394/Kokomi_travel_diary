@@ -90,7 +90,6 @@ html {
 	font-weight: 300;
 }
 
-
 /* Markdown styles */
 .prose :is(h2, h3, h4, h5, h6) {
 	margin-top: var(--size-8);

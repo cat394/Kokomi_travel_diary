@@ -14,7 +14,7 @@
 
 	export let data;
 
-  type Option = 'スマホ' | 'パソコン';
+	type Option = 'スマホ' | 'パソコン';
 	const options: Option[] = ['スマホ', 'パソコン'];
 
 	let selected: Option = 'スマホ';
@@ -41,8 +41,8 @@
 		</Sentence>
 	</Container>
 	<Container title="RSSの設定方法">
-    <Sentence>
-      <p>まずは、登録したいデバイスを選んでね。</p>
+		<Sentence>
+			<p>まずは、登録したいデバイスを選んでね。</p>
 			<Labels>
 				{#each options as option}
 					<label>
@@ -62,6 +62,6 @@
 					</article>
 				{/if}
 			</div>
-    </Sentence>
+		</Sentence>
 	</Container>
 </Contents>

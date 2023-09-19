@@ -1,15 +1,15 @@
 import type { Post } from '$lib/types';
 import { error } from '@sveltejs/kit';
 
-export async function load ({ params, fetch }) {
+export async function load({ params, fetch }) {
 	try {
 		const response = await fetch(`/api/posts`);
 		const posts: Post[] = await response.json();
-		const targetPosts = posts.filter(post => {
-			return post.tags.find(tag => {
+		const targetPosts = posts.filter((post) => {
+			return post.tags.find((tag) => {
 				return tag === params.tag;
-			})
-		})
+			});
+		});
 
 		return {
 			posts: targetPosts,
@@ -18,4 +18,4 @@ export async function load ({ params, fetch }) {
 	} catch (e) {
 		throw error(404, `Could not find ${params.tag}`);
 	}
-};
+}

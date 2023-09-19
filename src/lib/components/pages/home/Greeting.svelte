@@ -12,5 +12,8 @@
 	<p>
 		はじめてな事が多すぎて戸惑っちゃうこともあるかもしれないから、温かい目で見てくれたら嬉しいな。
 	</p>
-	<p>詳しいことは<PageLink href="/about">Aboutページ</PageLink>に書いてあるから、気になったら見てみてね！</p>
+	<p>
+		詳しいことは<PageLink href="/about">Aboutページ</PageLink
+		>に書いてあるから、気になったら見てみてね！
+	</p>
 </Sentence>

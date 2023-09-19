@@ -1,5 +1,5 @@
 <script lang="ts">
-	import * as config from "$lib/config";
+	import * as config from '$lib/config';
 	import { formatDate } from '$lib/utils';
 	import Hero from '$lib/components/utils/Hero.svelte';
 	import Image from '$lib/components/utils/Image.svelte';

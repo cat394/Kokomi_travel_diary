@@ -7,10 +7,10 @@
 	import AudioController from '$lib/components/utils/audio/AudioController.svelte';
 
 	import 'open-props/style';
-	import "open-props/colors-hsl";
-	import "open-props/masks/edges";
-	import "open-props/src/props.masks.edges.css";
-	import "open-props/masks.edges.min.css";
+	import 'open-props/colors-hsl';
+	import 'open-props/masks/edges';
+	import 'open-props/src/props.masks.edges.css';
+	import 'open-props/masks.edges.min.css';
 
 	import '../app.css';
 
@@ -43,7 +43,7 @@
 		grid-template-rows: auto auto 1fr auto;
 	}
 
-	@media(max-width: 768px) {
+	@media (max-width: 768px) {
 		.layout {
 			grid-template-rows: auto 1fr auto;
 		}

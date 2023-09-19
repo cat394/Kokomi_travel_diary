@@ -26,9 +26,7 @@
 	<meta name="twitter:description" content={data.meta.description} />
 	<meta name="twitter:image" content={data.meta.image.url} />
 	<meta name="twitter:image:alt" content={data.meta.image.alt} />
-
 </svelte:head>
-
 
 <article>
 	<!-- Title -->
@@ -55,20 +53,20 @@
 		width: 90%;
 		margin-inline: auto;
 		color: var(--text-primary);
-    box-shadow: 0px 0px 10px 1px var(--shadow-primary-dark);
+		box-shadow: 0px 0px 10px 1px var(--shadow-primary-dark);
 		padding: var(--size-5);
 		border-radius: var(--radius-2);
 	}
 
 	h1 {
 		text-transform: capitalize;
-    margin-bottom: var(--size-2);
-    font-size: var(--font-size-md);
+		margin-bottom: var(--size-2);
+		font-size: var(--font-size-md);
 	}
 
 	h1 + p {
 		color: var(--text-secondary);
-    font-size: var(--font-size-xs);
-    margin-bottom: var(--size-3);
+		font-size: var(--font-size-xs);
+		margin-bottom: var(--size-3);
 	}
 </style>

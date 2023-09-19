@@ -5,9 +5,8 @@
 		{ text: '豪華なクルーズに、きれいな景色！', image: 'cruise_morning' },
 		{ text: '夕方の学校ってなんかロマンチックだよね。', image: 'school_evening' },
 		{ text: '夜の海に出かけちゃったり！', image: 'mole_night' }
-	]
+	];
 </script>
-
 
 <ul>
 	{#each photos as photo}
@@ -18,11 +17,10 @@
 	{/each}
 </ul>
 
-
 <style>
 	ul {
 		display: grid;
-    gap: var(--size-9);
+		gap: var(--size-9);
 	}
 
 	li {
@@ -39,19 +37,19 @@
 		place-self: center;
 	}
 
-	@media(max-width: 768px) {
+	@media (max-width: 768px) {
 		li:nth-child(odd) {
 			grid-template-columns: 1fr 4fr;
-			grid-template-areas: 
-				". img"
-				"text text";
+			grid-template-areas:
+				'. img'
+				'text text';
 		}
 
 		li:nth-child(even) {
 			grid-template-columns: 4fr 1fr;
-			grid-template-areas: 
-				"img ."
-				"text text";
+			grid-template-areas:
+				'img .'
+				'text text';
 		}
 
 		li .text {

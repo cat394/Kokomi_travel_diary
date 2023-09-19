@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Link from "$lib/components/utils/Link.svelte";
+	import Link from '$lib/components/utils/Link.svelte';
 	export let fontBold = false;
 	export let href: string;
 </script>

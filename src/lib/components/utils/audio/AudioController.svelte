@@ -164,7 +164,7 @@
 		img {
 			max-height: 45px;
 		}
-		
+
 		button {
 			font-size: calc(var(--font-size-md) / 2);
 		}
