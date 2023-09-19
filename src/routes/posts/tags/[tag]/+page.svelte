@@ -1,4 +1,5 @@
 <script lang="ts">
+	import * as config from "$lib/config";
   import { formatDate } from "$lib/utils.js";
 	import Container from "$lib/components/utils/Container.svelte";
   import CardContainer from "$lib/components/utils/card/CardContainer.svelte";
@@ -7,6 +8,10 @@
 
   export let data;
 </script>
+
+<svelte:head>
+	<title>{config.title} | Search results</title>
+</svelte:head>
 
 <Container title={`${data.tagName}の検索結果`}>
   <CardContainer>
