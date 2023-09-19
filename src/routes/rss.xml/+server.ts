@@ -38,7 +38,7 @@ export async function GET({ fetch }) {
           <link>${escapeXml(config.url)}/${escapeXml(post.slug)}</link>
           <guid isPermaLink="true">${escapeXml(config.url)}/${escapeXml(post.slug)}</guid>
           <pubDate>${new Date(post.pubDate).toUTCString()}</pubDate>
-          <media:content url="${escapeXml(post.image.url)}" type="image/webp" />
+					<enclosure url=${post.image.url} type="image/webp" />
       </item>
   `
 			)
