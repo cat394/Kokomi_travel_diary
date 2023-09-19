@@ -1,31 +1,21 @@
 <script>
 	import Image from '$lib/components/utils/Image.svelte';
+
+	const photos = [
+		{ text: '豪華なクルーズに、きれいな景色！', image: 'cruise_morning' },
+		{ text: '夕方の学校ってなんかロマンチックだよね。', image: 'school_evening' },
+		{ text: '夜の海に出かけちゃったり！', image: 'mole_night' }
+	]
 </script>
 
 
 <ul>
-	<li>
-		<span class="text">
-			豪華なクルーズに、きれいな景色！
-		</span>
-		<div class="image">
-			<Image name="cruise_morning" />
-		</div>
-	</li>
-	<li>
-		<span class="text">
-			夕方の学校ってなんかロマンチックだよね。
-		</span>
-		<Image name="school_evening" />
-	</li>
-	<li>
-		<span class="text">
-			夜の海に出かけちゃったり！
-		</span>
-		<div class="image">
-			<Image name="mole_night" />
-		</div>
-	</li>
+	{#each photos as photo}
+		<li>
+			<span class="text">{photo.text}</span>
+			<div class="image"><Image name={photo.image} /></div>
+		</li>
+	{/each}
 </ul>
 
 
