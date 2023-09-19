@@ -4,7 +4,7 @@
 	import Image from '$lib/components/utils/Image.svelte';
 	import Contents from '$lib/components/utils/Contents.svelte';
 	import Container from '$lib/components/utils/Container.svelte';
-	import Position from '$lib/components/utils/position.svelte';
+	import Position from '../lib/components/utils/Position.svelte';
 	import Announcements from '$lib/components/pages/home/Announcements.svelte';
 	import Bgm from '$lib/components/pages/home/Bgm.svelte';
 	import Greeting from '$lib/components/pages/home/Greeting.svelte';
