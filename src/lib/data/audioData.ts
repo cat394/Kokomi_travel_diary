@@ -17,5 +17,5 @@ const audioDetails: Omit<BeforeFormatDetail, 'src'>[] = [
 export const audioData: formattedAudioDetail[] = audioDetails.map(detail => ({
 		...detail,
     src: `${AUDIO_FOLDER}${detail.fileName}.${audioFormat}`,
-    thumbImage: `${BGM_THUMB_FOLDER}${detail.fileName}.${imageFormat}`
+    thumbImage: `${IMAGE_FOLDER}${BGM_THUMB_FOLDER}${detail.fileName}.${imageFormat}`
 }));
