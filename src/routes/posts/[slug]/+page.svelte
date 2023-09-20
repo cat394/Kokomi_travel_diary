@@ -50,7 +50,7 @@
 
 <style>
 	article {
-		width: 90%;
+		max-width: 900px;
 		margin-inline: auto;
 		color: var(--text-primary);
 		box-shadow: 0px 0px 10px 1px var(--shadow-primary-dark);
