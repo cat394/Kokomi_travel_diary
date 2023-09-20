@@ -25,7 +25,7 @@
 </Hero>
 <Divider />
 <Contents>
-	<Container title="今週の記事">
+	<Container title="今月の記事">
 		<CardContainer>
 			{#each data.posts as post}
 				<Card>
