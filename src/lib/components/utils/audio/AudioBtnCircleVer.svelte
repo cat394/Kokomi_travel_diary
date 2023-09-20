@@ -43,34 +43,20 @@
 			<PauseCircle {strokeWidth} />
 		{/if}
 	</button>
-	<p>{title}</p>
 </div>
 
 <style>
 	button {
-		display: flex;
-		justify-content: center;
-		margin-right: var(--size-5);
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    background-color: hsl(var(--primary-hsl), 80%);
+    border-radius: var(--radius-round);
+		border: 1px solid var(--primary);
 	}
 
 	button:focus {
 		outline: none;
-	}
-
-	p {
-		font-size: var(--font-size-sm);
-		font-weight: 500;
-	}
-
-	.audio-btn {
-		font-size: var(--font-size-sm);
-		padding: var(--size-2) var(--size-7);
-		border-radius: var(--radius-round);
-		background-color: hsl(var(--primary-hsl), 80%);
-		border: 2px solid var(--primary);
-		display: inline-grid;
-		grid-template-columns: auto 1fr;
-		align-items: center;
-		gap: var(--size-2);
 	}
 </style>

@@ -2,7 +2,7 @@
 	import type { PositionType } from '$lib/types';
 	import Position from './Position.svelte';
 
-	export let title: string;
+	export let title = "";
 	export let titlePosition: PositionType = 'left';
 </script>
 
@@ -12,7 +12,9 @@
 		center={titlePosition === 'center'}
 		right={titlePosition === 'right'}
 	>
-		<h2>{title}</h2>
+		{#if title}
+			<h2>{title}</h2>
+		{/if}
 	</Position>
 	<slot />
 </section>

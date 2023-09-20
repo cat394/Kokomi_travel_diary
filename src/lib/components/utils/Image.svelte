@@ -1,25 +1,12 @@
-<script lang="ts">
-	import { imageDetails } from '$lib/data/imageDetails';
+<script>
+  import { imageDetails } from "$lib/data/imageData";
+  export let name = "";
 
-	export let name: string;
-
-	let selectedImage = imageDetails.find((image) => image.name === name) || null;
+  let targetImage = imageDetails.find(i => i.fileName === name);
 </script>
 
-{#if selectedImage}
-	<img
-		src={selectedImage.src}
-		alt={selectedImage.alt}
-		width={selectedImage.width}
-		height={selectedImage.height}
-		{...$$props}
-	/>
+{#if targetImage}
+<img src={targetImage.src} alt={targetImage.alt} width={targetImage.width} height={targetImage.height} />
 {:else}
-	<div>Image not found.</div>
+<p>Image not found</p>
 {/if}
-
-<style>
-	img {
-		border-radius: var(--radius-2);
-	}
-</style>

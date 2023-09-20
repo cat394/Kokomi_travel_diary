@@ -3,9 +3,9 @@
 
 	const bgm = {
 		title: '夢花火',
-		author: 'yuhei komatsu',
+		artist: 'yuhei komatsu',
 		src: '/audio/yumehanabi.mp3',
-		thumbImage: '/images/yumehanabi_thumb.webp'
+		thumbImage: '/images/bgmThumbs/yumehanabi_thumb.webp'
 	};
 </script>
 
