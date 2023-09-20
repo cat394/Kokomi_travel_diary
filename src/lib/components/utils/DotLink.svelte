@@ -6,7 +6,9 @@
 
 <style>
   a {
-    text-decoration: underline dotted var(--primary);
+    text-decoration-line: underline;
+		text-decoration-style: dotted;
+		text-decoration-color: var(--primary);
   }
 
   a:hover {
