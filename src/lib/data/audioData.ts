@@ -6,7 +6,7 @@ type formattedAudioDetail =  MediaDetail & {
 }
 
 const AUDIO_FOLDER = '/audio/';
-const BGM_THUMB_FOLDER = `${IMAGE_FOLDER}bgmThumb/`;
+const BGM_THUMB_FOLDER = `${IMAGE_FOLDER}bgmThumbs/`;
 const audioFormat = 'mp3';
 const imageFormat = 'webp';
 
@@ -17,5 +17,5 @@ const audioDetails: Omit<BeforeFormatDetail, 'src'>[] = [
 export const audioData: formattedAudioDetail[] = audioDetails.map(detail => ({
 		...detail,
     src: `${AUDIO_FOLDER}${detail.fileName}.${audioFormat}`,
-    thumbImage: `${IMAGE_FOLDER}${BGM_THUMB_FOLDER}${detail.fileName}.${imageFormat}`
+    thumbImage: `${BGM_THUMB_FOLDER}${detail.fileName}.${imageFormat}`
 }));
