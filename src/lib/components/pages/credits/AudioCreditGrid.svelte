@@ -16,7 +16,7 @@
         <AudioBtnCircleVer {src} {title} {artist} {thumbImage} />
       </div>
       <div>
-        <DotLink href={artistLink}>{artist}</DotLink>
+        <DotLink href={artistLink} target="_blank">{artist}</DotLink>
       </div>
       <span>{title}</span>
     {/each}

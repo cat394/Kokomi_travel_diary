@@ -13,7 +13,7 @@
   <div class="table-body">
     {#each creditsImageData as { artist, artistLink, title }}
       <div class="wrapper">
-        <Position center><DotLink href={artistLink}>{artist}</DotLink></Position>
+        <Position center><DotLink href={artistLink} target="_blank">{artist}</DotLink></Position>
         <Position center><span>{title}</span></Position>
       </div>
     {/each}
