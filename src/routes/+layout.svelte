@@ -20,7 +20,7 @@
 <div class="layout">
 	<Header />
 	<Nav />
-	<main class="max-w-[900px] mx-auto">
+	<main>
 		<Transition url={data.url} duration={650}>
 			<slot />
 		</Transition>
