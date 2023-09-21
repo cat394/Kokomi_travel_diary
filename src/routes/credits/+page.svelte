@@ -18,7 +18,7 @@
       <p>みなさん、こんにちは。Kokomiのプロデューサーである<ExLink href="https://ryo-webdev.vercel.app">Ryo</ExLink>と申します。<br>この度は当サイトにご訪問下さり、ありがとうございます。</p>
       <p>こちらのページにはKokomiを作り上げてくれている方々のリストを載せております。</p>
       <p>基本的にフリー素材を活用しており、気になる作品の作者の方がいましたらリンクから飛ぶことができるようになっております。<br>また、当サイトのメインページに載せるBGMは定期的に入れ替える予定ですが、それ以前の曲もこちらのページから聴くことができるようになっておりますのでご安心ください。</p>
-      <p>Kokomiの素体は<ExLink href="https://www.dlsite.com/maniax/work/=/product_id/RJ060599.html">著作権フリー立ちキャラクター素材集vol.5</ExLink>より作成しているため、私個人がKokomiの素体の著作権を有しているということはありません。</p>
+      <p>Kokomiの素体は<ExLink href="https://www.dlsite.com/maniax/dlaf/=/t/s/link/work/aid/ryo1231/id/RJ060599.html">著作権フリー立ちキャラクター素材集vol.5</ExLink>より作成しているため、私個人がKokomiの素体の著作権を有しているということはありません。</p>
     </Sentence>
   </div>
   <Credit category="BGM">
