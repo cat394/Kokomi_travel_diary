@@ -24,6 +24,9 @@
   .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    max-width: 520px;
+    min-width: 312px;
+    margin-inline: auto;
   }
 
   .container > .wrapper:first-child {
@@ -39,10 +42,5 @@
   .table-body {
     display: grid;
     gap: var(--size-4);
-  }
-
-  .center {
-    display: flex;
-    justify-content: center;
   }
 </style>

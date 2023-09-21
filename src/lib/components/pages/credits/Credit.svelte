@@ -28,4 +28,8 @@
   h2::after {
     padding-left: var(--size-3);
   }
+
+  .credit {
+    overflow: auto;
+  }
 </style>

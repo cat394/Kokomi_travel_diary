@@ -28,6 +28,7 @@
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr;
     max-width: 520px;
+    min-width: 297px;
     margin-inline: auto;
   }
 

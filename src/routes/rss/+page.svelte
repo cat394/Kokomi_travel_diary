@@ -1,12 +1,12 @@
 <script lang="ts">
 	import * as config from '$lib/config';
+	import { fade } from 'svelte/transition';
 	import { Rss } from 'lucide-svelte';
 	import Hero from '$lib/components/utils/Hero.svelte';
 	import Image from '$lib/components/utils/Image.svelte';
 	import Contents from '$lib/components/utils/Contents.svelte';
 	import Container from '$lib/components/utils/Container.svelte';
 	import LinkButton from '$lib/components/utils/LinkButton.svelte';
-	import { fade } from 'svelte/transition';
 	import Sentence from '$lib/components/utils/Sentence.svelte';
 	import Divider from '$lib/components/utils/Divider.svelte';
 	import Labels from '$lib/components/pages/rss/Labels.svelte';
