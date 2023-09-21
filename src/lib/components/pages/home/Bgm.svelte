@@ -5,7 +5,7 @@
 		title: '夢花火',
 		artist: 'yuhei komatsu',
 		src: '/audio/yumehanabi.mp3',
-		thumbImage: '/images/bgmThumbs/yumehanabi_thumb.webp'
+		thumbImage: '/images/bgmThumbs/yumehanabi.webp'
 	};
 </script>
 
