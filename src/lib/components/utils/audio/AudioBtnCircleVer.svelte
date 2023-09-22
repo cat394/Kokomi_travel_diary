@@ -33,13 +33,13 @@
 		isPlaying = true;
 	}
 
-	$: isPlaying = $audioGroupState.currentSrc === src && $audioGroupState.isPlaying;
+	$:sameMusicIsPlaying = $audioGroupState.currentSrc === src && $audioGroupState.isPlaying;
 </script>
 
 <div class="audio-btn">
 	<!-- Playback toggle button -->
 	<button aria-label={isPlaying ? 'Pause' : 'Play'} on:click={togglePlayback}>
-		{#if !isPlaying}
+		{#if !sameMusicIsPlaying}
 			<PlayCircle {strokeWidth} />
 		{:else}
 			<PauseCircle {strokeWidth} />
