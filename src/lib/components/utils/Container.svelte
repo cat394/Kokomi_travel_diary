@@ -2,7 +2,7 @@
 	import type { PositionType } from '$lib/types';
 	import Position from './Position.svelte';
 
-	export let title = "";
+	export let title = '';
 	export let titlePosition: PositionType = 'left';
 </script>
 

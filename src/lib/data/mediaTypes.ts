@@ -5,7 +5,6 @@ export type MediaDetail = {
 	artistLink: string;
 	src: string;
 	fileName: string;
-}
+};
 
 export type BeforeFormatDetail = Omit<MediaDetail, 'src'>;
-

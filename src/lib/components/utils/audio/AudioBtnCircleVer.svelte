@@ -33,7 +33,7 @@
 		isPlaying = true;
 	}
 
-	$:sameMusicIsPlaying = $audioGroupState.currentSrc === src && $audioGroupState.isPlaying;
+	$: sameMusicIsPlaying = $audioGroupState.currentSrc === src && $audioGroupState.isPlaying;
 </script>
 
 <div class="audio-btn">
@@ -49,12 +49,12 @@
 
 <style>
 	button {
-    width: 30px;
-    height: 30px;
-    display: grid;
-    place-items: center;
-    background-color: hsl(var(--primary-hsl), 80%);
-    border-radius: var(--radius-round);
+		width: 30px;
+		height: 30px;
+		display: grid;
+		place-items: center;
+		background-color: hsl(var(--primary-hsl), 80%);
+		border-radius: var(--radius-round);
 		border: 1px solid var(--primary);
 	}
 
