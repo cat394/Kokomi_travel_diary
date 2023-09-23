@@ -7,6 +7,7 @@
 	import Contents from '$lib/components/utils/Contents.svelte';
 	import Divider from '$lib/components/utils/Divider.svelte';
 	import ExLink from '$lib/components/utils/ExLink.svelte';
+	import Position from '$lib/components/utils/Position.svelte';
 	import Sentence from '$lib/components/utils/Sentence.svelte';
 </script>
 
@@ -36,9 +37,11 @@
 	<Credit category="BGM">
 		<AudioCreditGrid />
 	</Credit>
-	<Credit category="画像">
-		<ImageCreditGrid />
-	</Credit>
+	<Position center>
+		<Credit category="画像">
+			<ImageCreditGrid />
+		</Credit>
+	</Position>
 </Container>
 
 <style>
