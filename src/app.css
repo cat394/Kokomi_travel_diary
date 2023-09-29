@@ -110,10 +110,6 @@ html {
 	padding-left: var(--size-2);
 }
 
-.prose img {
-	max-height: 200px;
-}
-
 .howToRss ol {
 	list-style: decimal;
 	padding-left: 1.5em;
