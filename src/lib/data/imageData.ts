@@ -61,6 +61,14 @@ const heroDetails: BeforeFormatImageDetail[] = [
 		artistLink: 'https://sozaino.site/',
 		fileName: 'rss_hero',
 		alt: '音符の入った紫色の淡いグラデーションを背景にしてKokomiがいる'
+	},
+	{
+		id: 5,
+		title: 'きれいな音楽の背景(赤)',
+		artist: 'OKUMOTO',
+		artistLink: 'https://sozino.site/',
+		fileName: 'news_hero',
+		alt: '音符の入った赤色の淡いグラデーションを背景にして学生服のKokomiがいる'
 	}
 ];
 

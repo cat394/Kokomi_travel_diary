@@ -12,3 +12,5 @@ export type Post = {
 	published: boolean;
 	slug: string;
 };
+
+export type News = Omit<Post, 'tags'>; 

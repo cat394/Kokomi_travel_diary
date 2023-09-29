@@ -14,6 +14,7 @@
 	import Card from '$lib/components/utils/card/Card.svelte';
 	import CardBody from '$lib/components/utils/card/CardBody.svelte';
 	import Divider from '$lib/components/utils/Divider.svelte';
+	import PageLink from '$lib/components/utils/PageLink.svelte';
 
 	export let data;
 </script>
@@ -30,6 +31,8 @@
 <Contents>
 	<div class="two-sides">
 		<Container title="お知らせ">
+			<p>詳しいことは<PageLink href="/news">お知らせコーナー</PageLink>に記載されているからチェックしてみるのもいいかも～。</p>
+			<Divider size="sm" />
 			<Announcements />
 		</Container>
 		<Container title="BGM">
