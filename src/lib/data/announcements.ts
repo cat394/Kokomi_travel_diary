@@ -5,7 +5,8 @@ type Announcement = {
 
 const announcements: Announcement[] = [
 	{ date: '2023/09/19', description: 'サイトを立ち上げた日！' },
-	{ date: '2023/09/21', description: 'クレジットの一覧ページ(最下部にリンクがあるよ)を追加した！' }
+	{ date: '2023/09/21', description: 'クレジットの一覧ページ(最下部にリンクがあるよ)を追加した！' },
+	{ date: '2023/09/29', description: 'ちょっとした発表が待っているよ・・・' }
 ];
 
 const sortedAnnouncements = announcements.sort(
