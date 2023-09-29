@@ -25,6 +25,9 @@
 							on:click={isMobileNavOpen.toggleOpen}
 						>
 							{nav.label}
+							{#if nav.path === $currentPageSegment}
+									<img src="/images/nav_kokomi_mini.webp" alt="">
+							{/if}
 						</a>
 					</li>
 				{/each}
@@ -61,6 +64,10 @@
 		margin-bottom: var(--size-5);
 	}
 
+	li {
+		position: relative;
+	}
+
 	a {
 		display: block;
 		text-align: center;
@@ -73,7 +80,13 @@
 		color: var(--primary);
 		background: var(--bg-overlay);
 		border: 1px solid var(--text-secondary-dark);
-		border-radius: var(--radius-round);
+	}
+
+	a[aria-current='true'] > img {
+		max-height: 42px;
+		position: absolute;
+		left: 10px;
+		top: -22px;
 	}
 
 	button {
@@ -100,6 +113,7 @@
 		text-align: center;
 		margin-bottom: var(--size-5);
 		font-weight: bold;
+		position: relative;
 	}
 
 	.close-btn {
