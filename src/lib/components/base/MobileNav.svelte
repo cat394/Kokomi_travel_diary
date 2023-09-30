@@ -26,7 +26,7 @@
 						>
 							{nav.label}
 							{#if nav.path === $currentPageSegment}
-									<img src="/images/nav_kokomi_mini.webp" alt="">
+								<img src="/images/chibi_kokomi.webp" alt="Kokomiのちびキャラ" />
 							{/if}
 						</a>
 					</li>
@@ -86,7 +86,7 @@
 		max-height: 42px;
 		position: absolute;
 		left: 10px;
-		top: -22px;
+		top: -2rem;
 	}
 
 	button {

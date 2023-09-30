@@ -1,21 +1,19 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { derived } from 'svelte/store';
+	import { navs } from '$lib/data/navs';
 
 	let activeLink = -1;
-	const links = [
-		{ path: '/', label: 'Home' },
-		{ path: '/about', label: 'About' },
-		{ path: '/posts', label: 'Posts' },
-		{ path: '/rss', label: 'RSS' }
-	];
 
 	const getLastPathSegment = (url: string): string => {
 		return '/' + url.split('/').at(-1);
 	};
 
+	const currentPageSegment = derived(page, ($page) => getLastPathSegment($page.url.href));
+
 	$: {
 		const segment = getLastPathSegment($page.url.href);
-		activeLink = links.findIndex((link) => link.path === segment);
+		activeLink = navs.findIndex((nav) => nav.path === segment);
 	}
 </script>
 
@@ -25,11 +23,16 @@
 
 	<div class="container">
 		<ul class="links">
-			{#each links as link, index}
+			{#each navs as nav, index}
 				<li>
-					<a href={link.path} aria-current={index === activeLink ? 'true' : 'false'}>
-						<span>{link.label}</span>
+					<a href={nav.path} aria-current={index === activeLink ? 'true' : 'false'}>
+						<span>{nav.label}</span>
 					</a>
+					{#if nav.path === $currentPageSegment}
+						<div class="img-wrapper">
+							<img src="/images/chibi_kokomi.webp" alt="Kokomiのちびキャラ" />
+						</div>
+					{/if}
 				</li>
 			{/each}
 		</ul>
@@ -54,6 +57,19 @@
 	li {
 		width: 100%;
 		height: 100%;
+		position: relative;
+	}
+
+	.img-wrapper {
+		position: absolute;
+		top: -3.13rem;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	img {
+		max-height: 50px;
 	}
 
 	a {
