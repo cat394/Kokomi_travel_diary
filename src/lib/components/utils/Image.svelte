@@ -1,17 +1,15 @@
-<script>
-	import { imageDetails } from '$lib/data/imageData';
-	export let name = '';
+<script lang="ts">
+	import { imageComponentData } from "$lib/data/imageData";
 
-	let targetImage = imageDetails.find((i) => i.fileName === name);
+  export let name :string;
+
+  const detail = imageComponentData[name];
+
+  if (!detail) {
+    console.error(`Image with name ${name} not found!`);
+  }
 </script>
 
-{#if targetImage}
-	<img
-		src={targetImage.src}
-		alt={targetImage.alt}
-		width={targetImage.width}
-		height={targetImage.height}
-	/>
-{:else}
-	<p>Image not found</p>
+{#if detail}
+<img src={detail.src} width={detail.width} height={detail.height} alt={detail.alt} />
 {/if}
