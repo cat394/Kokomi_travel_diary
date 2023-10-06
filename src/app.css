@@ -28,6 +28,17 @@ html {
 	--bg-secondary-light: var(--gray-0);
 	--bg-overlay-light: hsl(var(--bg-primary-hsl-light) / 70%);
 	--mobile-nav-bg-light: var(--primary-light);
+
+	/* halloween */
+	--primary-light: var(--green-7);
+	--primary-hsl-light: var(--green-5-hsl);
+	--text-primary-light: var(--gray-8);
+	--text-secondary-light: var(--gray-7);
+	--bg-primary-hsl-light: 0 0% 100%;
+	--bg-primary-light: hsl(var(--bg-primary-hsl-light));
+	--bg-secondary-light: var(--gray-0);
+	--bg-overlay-light: hsl(var(--bg-primary-hsl-light) / 70%);
+	--mobile-nav-bg-light: var(--primary-light);
 }
 
 :root {
