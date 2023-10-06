@@ -1,12 +1,11 @@
-import type { BeforeFormatDetail, MediaDetail } from './mediaTypes';
-import { IMAGE_FOLDER } from './imageData';
+import type { BeforeFormatDetail, MediaDetail } from '$lib/data/mediaTypes';
 
 type formattedAudioDetail = MediaDetail & {
 	thumbImage: string;
 };
 
 const AUDIO_FOLDER = '/audio/';
-const BGM_THUMB_FOLDER = `${IMAGE_FOLDER}bgmThumbs/`;
+const BGM_THUMB_FOLDER = `/images/bgmThumbs/`;
 const audioFormat = 'mp3';
 const imageFormat = 'webp';
 
