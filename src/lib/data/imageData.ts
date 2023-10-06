@@ -18,7 +18,7 @@ type CreditsImageData = {
 	artistLink: string;
 };
 
-const IMAGE_FOLDERS = {
+export const IMAGE_FOLDERS = {
 	HERO: '/images/',
 	PHOTO: '/images/photos/'
 };
