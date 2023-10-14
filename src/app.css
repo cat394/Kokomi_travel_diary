@@ -30,15 +30,17 @@ html {
 	--mobile-nav-bg-light: var(--primary-light);
 
 	/* halloween */
-	--primary-light: var(--green-7);
-	--primary-hsl-light: var(--green-5-hsl);
-	--text-primary-light: var(--gray-8);
-	--text-secondary-light: var(--gray-7);
-	--bg-primary-hsl-light: 0 0% 100%;
-	--bg-primary-light: hsl(var(--bg-primary-hsl-light));
-	--bg-secondary-light: var(--gray-0);
-	--bg-overlay-light: hsl(var(--bg-primary-hsl-light) / 70%);
-	--mobile-nav-bg-light: var(--primary-light);
+	--primary-dark: var(--yellow-6);
+	--bg-primary-dark: linear-gradient(180deg, rgba(211,76,47,1) 0%, rgba(172,44,105,1) 32%, rgba(53,37,132,1) 100%);
+	--bg-secondary-dark: hsl(var(--purple-12-hsl) / 90%);
+	--text-primary-dark: var(--yellow-1);
+	--text-secondary-dark: var(--yellow-8);
+
+	--primary-light: var(--yellow-6);
+	--bg-primary-light: linear-gradient(180deg, rgba(211,76,47,1) 0%, rgba(172,44,105,1) 32%, rgba(53,37,132,1) 100%);
+	--bg-secondary-light: hsl(var(--purple-12-hsl) / 90%);
+	--text-primary-light: var(--yellow-1);
+	--text-secondary-light: var(--yellow-8);
 }
 
 :root {
@@ -102,6 +104,7 @@ html {
 }
 
 /* Markdown styles */
+
 .prose :is(h2, h3, h4, h5, h6) {
 	margin-top: var(--size-8);
 	margin-bottom: var(--size-3);
