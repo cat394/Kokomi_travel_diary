@@ -3,7 +3,6 @@ export type MediaDetail = {
 	title: string;
 	artist: string;
 	artistLink: string;
-	src: string;
 	fileName: string;
 };
 
