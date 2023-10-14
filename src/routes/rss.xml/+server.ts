@@ -22,7 +22,7 @@ export async function GET({ fetch }) {
 							<description>${post.description}</description>
 							<link>${config.url}/posts/${post.slug}</link>
 							<pubDate>${new Date(post.pubDate).toUTCString()}</pubDate>
-							<enclosure url="${post.image.url}" type="image/webp" />
+							<enclosure url="${post.image.url}" type="image/webp"></enclosure>
 						</item>
 					`
 					)
