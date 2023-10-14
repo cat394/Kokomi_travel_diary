@@ -51,7 +51,10 @@
 		display: grid;
 		grid-template-columns: 0.25fr 1fr 0.25fr;
 		margin-block: var(--size-10);
-		border-bottom: 1px solid var(--gray-3);
+		/* border-bottom: 1px solid var(--gray-3); */
+
+		/* halloween */
+		background: var(--purple-11);
 	}
 
 	li {
@@ -82,6 +85,9 @@
 		opacity: 0.6;
 		font-weight: bold;
 		text-align: center;
+
+		/* halloween */
+		color: var(--gray-0);
 	}
 
 	a:hover {
@@ -90,13 +96,14 @@
 	}
 
 	a[aria-current='true'] {
+		color: var(--primary);
 		opacity: 1;
 	}
 
 	a[aria-current='true']:hover {
 		cursor: default;
 		background: inherit;
-		color: currentColor;
+		color: var(--primary);
 	}
 
 	.container {
@@ -113,6 +120,10 @@
 		position: absolute;
 		bottom: 0;
 		height: 2px;
+
+		/* halloween */
+		height: 3px;
+		
 		width: 25%;
 		background: var(--primary);
 		transition: left 0.4s;

@@ -12,7 +12,7 @@
 	{#each photos as photo}
 		<li>
 			<span class="text">{photo.text}</span>
-			<div class="image"><Image name={photo.image} /></div>
+			<div class="image"><Image name={`photos:${photo.image}`} /></div>
 		</li>
 	{/each}
 </ul>

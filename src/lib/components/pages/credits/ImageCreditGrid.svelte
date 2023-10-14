@@ -1,8 +1,7 @@
 <script>
 	import DotLink from '$lib/components/utils/DotLink.svelte';
-	import Link from '$lib/components/utils/Link.svelte';
 	import Position from '$lib/components/utils/Position.svelte';
-	import { creditsImageData } from '$lib/data/imageData';
+	import { imageData } from '$lib/data/imageData';
 </script>
 
 <div class="container">
@@ -11,14 +10,17 @@
 		<div>タイトル名</div>
 	</div>
 	<div class="table-body">
-		{#each creditsImageData as { artist, artistLink, title }}
-			<div class="wrapper">
-				<Position center><DotLink href={artistLink} target="_blank">{artist}</DotLink></Position>
-				<Position center><span>{title}</span></Position>
-			</div>
+		{#each imageData as folder}
+			{#each folder.data as { artist, artistLink, title }}
+				<div class="wrapper">
+					<Position center><DotLink href={artistLink} target="_blank">{artist}</DotLink></Position>
+					<Position center><span>{title}</span></Position>
+				</div>
+			{/each}
 		{/each}
 	</div>
 </div>
+
 
 <style>
 	.wrapper {

@@ -32,13 +32,17 @@
 		font-weight: bold;
 		font-size: var(--font-size-md);
 		margin-bottom: var(--size-3);
+		color: var(--yellow-5);
+
+		/* halloween */
+		font-family: 'Kaisei Opti', serif;
 	}
 
 	h2::before,
 	h2::after {
 		display: inline-block;
-		content: '☘';
-		color: #77b255;
+		/* content: '☘'; */
+		content: '🎃';
 	}
 
 	h2::before {

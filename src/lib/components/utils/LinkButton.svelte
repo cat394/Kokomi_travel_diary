@@ -20,15 +20,22 @@
 	}
 
 	.link-btn {
-		background: var(--primary-light);
+		background: var(--primary);
 		color: white;
 		box-shadow: 0px 5px 0px 0px var(--gray-5);
 		border-radius: var(--radius-round);
 		transition: all 300ms;
+
+		/* halloween */
+		background: var(--orange-8);
+		box-shadow: 0px 5px 0px 0px var(--orange-12);
 	}
 
 	.link-btn:hover {
 		transform: translateY(3px);
 		box-shadow: 0px 2px 0px 0px var(--gray-5);
+
+		/* halloween */
+		box-shadow: 0px 2px 0px 0px var(--yellow-12);
 	}
 </style>

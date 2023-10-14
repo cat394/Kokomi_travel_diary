@@ -2,7 +2,7 @@
 	import { AlignJustify } from 'lucide-svelte';
 	import { isMobileNavOpen } from '$lib/stores/mobileNavState';
 	import * as config from '$lib/config';
-	import Toggle from '$lib/components/base/Toggle.svelte';
+	// import Toggle from '$lib/components/base/Toggle.svelte';
 </script>
 
 <header>
@@ -13,7 +13,7 @@
 
 	<div class="buttons">
 		<!-- Theme switcher -->
-		<Toggle />
+		<!-- <Toggle /> -->
 
 		<!-- Hamburger button (mobile only) -->
 		<div class="hamburger">
@@ -42,8 +42,18 @@
 	}
 
 	b {
-		font-size: var(--font-size-lg);
-		color: var(--primary);
+		/* font-size: var(--font-size-lg); */
+		/* color: var(--primary); */
+
+		/* halloween */
+		font-size: var(--font-size-7);
+	}
+
+	/* halloween */
+	.title {
+		color: var(--gray-12);
+		text-shadow: 1px 1px var(--primary);
+		font-family: 'Creepster', cursive;
 	}
 
 	.hamburger {

@@ -16,7 +16,7 @@
 		text-align: center;
 		padding-block: var(--size-7) var(--size-11);
 		margin-top: var(--size-fluid-6);
-		border-top: 0.5px solid var(--text-secondary);
+		/* border-top: 0.5px solid var(--text-secondary); */
 	}
 	small {
 		font-size: var(--font-size-xs);

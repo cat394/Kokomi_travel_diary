@@ -27,6 +27,7 @@
 	.wrapper {
 		display: grid;
 		grid-template-columns: 0.5fr 1fr 1fr;
+		row-gap: var(--size-4);
 		max-width: 520px;
 		min-width: 297px;
 		margin-inline: auto;
