@@ -16,10 +16,10 @@
 <Container title={`${data.tagName}の検索結果`}>
 	<CardContainer>
 		{#each data.posts as post}
-			<Card>
+			<Card href={`/posts/${post.slug}`}>
 				<img src={post.image.url} alt={post.image.alt} />
 				<CardBody>
-					<a slot="title" href={`/posts/${post.slug}`}>{post.title}</a>
+					<span slot="title">{post.title}</span>
 					<time slot="date">{formatDate(post.pubDate)}</time>
 					<p>{post.description}</p>
 				</CardBody>

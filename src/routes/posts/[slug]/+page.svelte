@@ -56,12 +56,18 @@
 		box-shadow: 0px 0px 10px 1px var(--shadow-primary-dark);
 		padding: var(--size-5);
 		border-radius: var(--radius-2);
+
+		/* halloween */
+		background-color: var(--purple-12);
 	}
 
 	h1 {
 		text-transform: capitalize;
 		margin-bottom: var(--size-2);
 		font-size: var(--font-size-md);
+
+		/* halloween */
+		color: var(--yellow-3);
 	}
 
 	h1 + p {

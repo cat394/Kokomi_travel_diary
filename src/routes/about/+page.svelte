@@ -16,7 +16,7 @@
 </svelte:head>
 
 <Hero>
-	<Image slot="media" name="about_hero" />
+	<Image slot="media" name="root:about_hero_halloween" />
 	Who is Kokomi...?
 </Hero>
 <Divider />

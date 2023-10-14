@@ -25,7 +25,7 @@
 </svelte:head>
 
 <Hero textPosition="left">
-	<Image slot="media" name="rss_hero" />
+	<Image slot="media" name="root:rss_hero_halloween" />
 	RSS...?
 </Hero>
 <Divider />

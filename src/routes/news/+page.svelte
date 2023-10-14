@@ -17,7 +17,7 @@
 </svelte:head>
 
 <Hero textPosition="right">
-	<Image slot="media" name="news_hero" />
+	<Image slot="media" name="root:news_hero_halloween" />
 	お知らせコーナー
 </Hero>
 <Divider />
@@ -25,10 +25,10 @@
 <Container>
   <CardContainer>
     {#each data.news as article}
-      <Card>
+      <Card href={`/news/${article.slug}`}>
         <img src={article.image.url} alt={article.image.alt} />
         <CardBody>
-          <a slot="title" href={`/news/${article.slug}`}>{article.title}</a>
+          <span slot="title">{article.title}</span>
           <time slot="date">{formatDate(article.pubDate)}</time>
           <p>{article.description}</p>
         </CardBody>
