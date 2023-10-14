@@ -161,3 +161,8 @@ html {
 	display: grid;
 	gap: 0.5em;
 }
+
+.prose :is(blockquote) {
+	border-left: 2px solid white;
+	padding-left: var(--size-3);
+}
