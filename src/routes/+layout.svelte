@@ -18,10 +18,10 @@
 </script>
 
 <div class="layout">
-	<Header />
-	<Nav />
+		<Header />
+		<Nav />
 	<main>
-		<Transition url={data.url} duration={650}>
+		<Transition url={data.url} duration={740}>
 			<slot />
 		</Transition>
 	</main>
@@ -35,17 +35,20 @@
 		width: 90%;
 		max-width: 900px;
 		margin-inline: auto;
+
 	}
 
 	.layout {
 		min-height: 100vh;
 		display: grid;
 		grid-template-rows: auto auto 1fr auto;
+		background-image: url('/images/halloween_bg.webp');
 	}
 
 	@media (max-width: 768px) {
 		.layout {
 			grid-template-rows: auto 1fr auto;
+			background-size: 300px 300px;
 		}
 	}
 </style>
