@@ -13,4 +13,4 @@ export type Post = {
 	slug: string;
 };
 
-export type News = Omit<Post, 'tags'>; 
+export type News = Omit<Post, 'tags'>;

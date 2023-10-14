@@ -31,13 +31,23 @@ html {
 
 	/* halloween */
 	--primary-dark: var(--yellow-6);
-	--bg-primary-dark: linear-gradient(180deg, rgba(211,76,47,1) 0%, rgba(172,44,105,1) 32%, rgba(53,37,132,1) 100%);
+	--bg-primary-dark: linear-gradient(
+		180deg,
+		rgba(211, 76, 47, 1) 0%,
+		rgba(172, 44, 105, 1) 32%,
+		rgba(53, 37, 132, 1) 100%
+	);
 	--bg-secondary-dark: hsl(var(--purple-12-hsl) / 90%);
 	--text-primary-dark: var(--yellow-1);
 	--text-secondary-dark: var(--yellow-8);
 
 	--primary-light: var(--yellow-6);
-	--bg-primary-light: linear-gradient(180deg, rgba(211,76,47,1) 0%, rgba(172,44,105,1) 32%, rgba(53,37,132,1) 100%);
+	--bg-primary-light: linear-gradient(
+		180deg,
+		rgba(211, 76, 47, 1) 0%,
+		rgba(172, 44, 105, 1) 32%,
+		rgba(53, 37, 132, 1) 100%
+	);
 	--bg-secondary-light: hsl(var(--purple-12-hsl) / 90%);
 	--text-primary-light: var(--yellow-1);
 	--text-secondary-light: var(--yellow-8);

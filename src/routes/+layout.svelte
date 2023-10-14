@@ -18,8 +18,8 @@
 </script>
 
 <div class="layout">
-		<Header />
-		<Nav />
+	<Header />
+	<Nav />
 	<main>
 		<Transition url={data.url} duration={740}>
 			<slot />
@@ -35,7 +35,6 @@
 		width: 90%;
 		max-width: 900px;
 		margin-inline: auto;
-
 	}
 
 	.layout {

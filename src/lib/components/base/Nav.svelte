@@ -123,7 +123,7 @@
 
 		/* halloween */
 		height: 3px;
-		
+
 		width: 25%;
 		background: var(--primary);
 		transition: left 0.4s;

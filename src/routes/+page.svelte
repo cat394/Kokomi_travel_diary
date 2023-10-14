@@ -31,7 +31,10 @@
 <Contents>
 	<div class="two-sides">
 		<Container title="お知らせ">
-			<p>詳しいことは<PageLink href="/news">お知らせコーナー</PageLink>に記載されているからチェックしてみるのもいいかも～。</p>
+			<p>
+				詳しいことは<PageLink href="/news">お知らせコーナー</PageLink
+				>に記載されているからチェックしてみるのもいいかも～。
+			</p>
 			<Divider size="sm" />
 			<Announcements />
 		</Container>

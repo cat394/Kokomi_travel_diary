@@ -23,16 +23,16 @@
 <Divider />
 
 <Container>
-  <CardContainer>
-    {#each data.news as article}
-      <Card href={`/news/${article.slug}`}>
-        <img src={article.image.url} alt={article.image.alt} />
-        <CardBody>
-          <span slot="title">{article.title}</span>
-          <time slot="date">{formatDate(article.pubDate)}</time>
-          <p>{article.description}</p>
-        </CardBody>
-      </Card>
-    {/each}
-  </CardContainer>
+	<CardContainer>
+		{#each data.news as article}
+			<Card href={`/news/${article.slug}`}>
+				<img src={article.image.url} alt={article.image.alt} />
+				<CardBody>
+					<span slot="title">{article.title}</span>
+					<time slot="date">{formatDate(article.pubDate)}</time>
+					<p>{article.description}</p>
+				</CardBody>
+			</Card>
+		{/each}
+	</CardContainer>
 </Container>

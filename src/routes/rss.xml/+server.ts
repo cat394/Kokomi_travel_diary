@@ -4,7 +4,7 @@ import type { Post } from '$lib/types';
 export async function GET({ fetch }) {
 	const response = await fetch('api/posts');
 	const posts: Post[] = await response.json();
-
+	console.log(posts);
 	const headers = { 'Content-Type': 'application/xml' };
 
 	const xml = `
@@ -23,7 +23,7 @@ export async function GET({ fetch }) {
 							<link>${config.url}/${post.slug}</link>
 							<guid isPermaLink="true">${config.url}/${post.slug}</guid>
 							<pubDate>${new Date(post.pubDate).toUTCString()}</pubDate>
-							<enclosure url=${post.image.url} type="image/webp" />
+							<enclosure url="${post.image.url}" type="image/webp" />
 						</item>
 					`
 					)
