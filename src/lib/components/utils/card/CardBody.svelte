@@ -11,13 +11,8 @@
 
 	.title {
 		display: inline-block;
-		text-decoration: underline;
 		font-weight: bold;
 		font-size: var(--font-size-md);
-	}
-
-	.title:hover {
-		text-decoration: none;
 	}
 
 	.date {
