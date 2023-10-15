@@ -57,8 +57,16 @@
 	}
 
 	.hamburger {
+		position: fixed;
+		top: 15px;
+		right: 12px;
 		display: grid;
 		place-items: center;
+		color: yellow;
+		background-color: var(--gray-10);
+		padding: var(--size-2);
+		border-radius: var(--radius-round);
+		z-index: var(--layer-5);
 	}
 
 	.buttons {
@@ -73,6 +81,9 @@
 			padding: var(--size-3);
 			margin-bottom: var(--size-5);
 			border-bottom: 1px solid var(--text-secondary);
+
+			/* halloween */
+			border-bottom: 1.3px dashed white;
 		}
 
 		b {
