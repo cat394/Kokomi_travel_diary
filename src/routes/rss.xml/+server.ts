@@ -4,7 +4,6 @@ import type { Post } from '$lib/types';
 export async function GET({ fetch }) {
 	const response = await fetch('api/posts');
 	const posts: Post[] = await response.json();
-	console.log(posts);
 	const headers = { 'Content-Type': 'application/xml' };
 
 	const xml = `
