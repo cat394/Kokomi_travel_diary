@@ -4,9 +4,9 @@
 	export let href: string;
 </script>
 
-<div class="pill" class:text-bold={fontBold}>
+<li class="pill" class:text-bold={fontBold}>
 	#<Link {href}><slot /></Link>
-</div>
+</li>
 
 <style>
 	.pill {

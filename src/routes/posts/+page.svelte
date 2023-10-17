@@ -1,16 +1,13 @@
 <script lang="ts">
 	import * as config from '$lib/config';
-	import { formatDate } from '$lib/utils';
 	import Hero from '$lib/components/utils/Hero.svelte';
 	import Image from '$lib/components/utils/Image.svelte';
 	import Container from '$lib/components/utils/Container.svelte';
-	import Card from '$lib/components/utils/card/Card.svelte';
-	import CardBody from '$lib/components/utils/card/CardBody.svelte';
 	import Contents from '$lib/components/utils/Contents.svelte';
-	import CardContainer from '$lib/components/utils/card/CardContainer.svelte';
 	import Pills from '$lib/components/utils/Pills.svelte';
 	import Pill from '$lib/components/utils/Pill.svelte';
 	import Divider from '$lib/components/utils/Divider.svelte';
+	import Cards from '$lib/components/utils/card/Cards.svelte';
 
 	export let data;
 </script>
@@ -26,18 +23,7 @@
 <Divider />
 <Contents>
 	<Container title="今月の記事">
-		<CardContainer>
-			{#each data.posts as post}
-				<Card href={`/posts/${post.slug}`}>
-					<img src={post.image.url} alt={post.image.alt} />
-					<CardBody>
-						<span slot="title">{post.title}</span>
-						<time slot="date">{formatDate(post.pubDate)}</time>
-						<p>{post.description}</p>
-					</CardBody>
-				</Card>
-			{/each}
-		</CardContainer>
+		<Cards items={data.posts} />
 	</Container>
 	<Container title="タグから探す？">
 		<Pills>

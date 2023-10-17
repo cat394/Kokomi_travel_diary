@@ -4,19 +4,17 @@
 
 	export let name: string;
 
-	let image: ImageData | undefined;
 	let folderData: FolderData | undefined;
+	let image: ImageData | undefined;
+	
+	const [folderName, fileName] = name.split(':');
 
-	$: {
-		const [folderName, fileName] = name.split(':');
-
-		for (const folder of imageData) {
-			if (folder.folder === folderName) {
-				image = folder.data.find((i) => i.fileName === fileName);
-				if (image) {
-					folderData = folder;
-					break;
-				}
+	for (const folder of imageData) {
+		if (folder.folder === folderName) {
+			image = folder.data.find((i) => i.fileName === fileName);
+			if (image) {
+				folderData = folder;
+				break;	
 			}
 		}
 	}

@@ -134,6 +134,15 @@ html {
 	padding-left: var(--size-2);
 }
 
+.prose :is(blockquote) {
+	border-left: 2px solid white;
+	padding-left: var(--size-3);
+}
+
+.prose :is(img) {
+	margin-top: var(--size-2);
+}
+
 .howToRss ol {
 	list-style: decimal;
 	padding-left: 1.5em;
@@ -170,9 +179,4 @@ html {
 .howToRss > article > ol ol {
 	display: grid;
 	gap: 0.5em;
-}
-
-.prose :is(blockquote) {
-	border-left: 2px solid white;
-	padding-left: var(--size-3);
 }

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Pills from '$lib/components/utils/Pills.svelte';
 	import Pill from '$lib/components/utils/Pill.svelte';
-	import { formatDate } from '$lib/utils';
+	import Date from '$lib/components/utils/Date.svelte';
 
 	export let data;
 </script>
@@ -31,14 +31,12 @@
 <article>
 	<!-- Title -->
 	<h1>{data.meta.title}</h1>
-	<p>Published at <time>{formatDate(data.meta.pubDate)}</time></p>
+	<p>Published at <Date dateString={data.meta.pubDate} /></p>
 
 	<!-- Tags -->
 	<Pills>
 		{#each data.meta.tags as tag}
-			<li>
-				<Pill href={`/posts/tags/${tag}`}>{tag}</Pill>
-			</li>
+			<Pill href={`/posts/tags/${tag}`}>{tag}</Pill>
 		{/each}
 	</Pills>
 

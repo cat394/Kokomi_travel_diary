@@ -1,15 +1,14 @@
-<script>
-	import { formatDate } from '$lib/utils';
-
+<script lang="ts">
+	import Date from '$lib/components/utils/Date.svelte';
 	export let data;
 </script>
 
 <article>
 	<!-- Title -->
 	<h1>{data.meta.title}</h1>
-	<p>Published at <time>{formatDate(data.meta.pubDate)}</time></p>
+	<p>Published at <Date dateString={data.meta.pubDate} /></p>
 
-	<!-- Post -->
+	<!-- News -->
 	<div class="prose">
 		<svelte:component this={data.content} />
 	</div>

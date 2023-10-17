@@ -1,6 +1,11 @@
+<script lang="ts">
+	import Date from "$lib/components/utils/Date.svelte";
+	export let dateString: string;
+</script>
+
 <div class="card-body">
 	<div class="title"><slot name="title" /></div>
-	<div class="date"><slot name="date" /></div>
+	<div class="date"><Date {dateString} /></div>
 	<div><slot /></div>
 </div>
 

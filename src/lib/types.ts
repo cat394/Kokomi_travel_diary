@@ -3,13 +3,15 @@ export type PositionType = 'left' | 'center' | 'right';
 export type Post = {
 	title: string;
 	pubDate: string;
+	revisedAt: string;
 	description: string;
-	image: {
+	eyecatch: {
 		url: string;
 		alt: string;
 	};
 	tags: string[];
 	published: boolean;
+
 	slug: string;
 };
 
