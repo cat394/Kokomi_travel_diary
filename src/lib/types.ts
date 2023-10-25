@@ -3,7 +3,6 @@ export type PositionType = 'left' | 'center' | 'right';
 export type Post = {
 	title: string;
 	pubDate: string;
-	revisedAt: string;
 	description: string;
 	eyecatch: {
 		url: string;

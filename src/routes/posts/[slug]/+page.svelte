@@ -17,15 +17,15 @@
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={data.meta.title} />
 	<meta property="og:description" content={data.meta.description} />
-	<meta property="og:image" content={data.meta.image.url} />
-	<meta property="og:image:alt" content={data.meta.image.alt} />
+	<meta property="og:image" content={data.meta.eyecatch.url} />
+	<meta property="og:image:alt" content={data.meta.eyecatch.alt} />
 
 	<!-- Twitter Card Tags -->
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content={data.meta.title} />
 	<meta name="twitter:description" content={data.meta.description} />
-	<meta name="twitter:image" content={data.meta.image.url} />
-	<meta name="twitter:image:alt" content={data.meta.image.alt} />
+	<meta name="twitter:image" content={data.meta.eyecatch.url} />
+	<meta name="twitter:image:alt" content={data.meta.eyecatch.alt} />
 </svelte:head>
 
 <article>

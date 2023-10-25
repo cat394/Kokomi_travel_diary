@@ -4,7 +4,7 @@ import type { News } from '$lib/types';
 const getPosts = async () => {
 	const news: News[] = [];
 
-	const paths = import.meta.glob('/src/markdown/news/**/*.md', { eager: true });
+	const paths = import.meta.glob('/src/markdown/news/*.md', { eager: true });
 
 	for (const path in paths) {
 		const file = paths[path];
@@ -20,6 +20,6 @@ const getPosts = async () => {
 };
 
 export async function GET() {
-	const posts = await getPosts();
-	return json(posts);
+	const news = await getPosts();
+	return json(news);
 }

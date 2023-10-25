@@ -14,16 +14,16 @@
 
 	import '../app.css';
 
-	export let data;
+	// export let data;
 </script>
 
 <div class="layout">
 	<Header />
 	<Nav />
 	<main>
-		<Transition url={data.url} duration={740}>
+		<!-- <Transition url={data.url} duration={740}> -->
 			<slot />
-		</Transition>
+		<!-- </Transition> -->
 	</main>
 	<MobileNav />
 	<Footer />
