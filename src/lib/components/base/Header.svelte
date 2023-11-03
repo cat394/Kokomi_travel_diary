@@ -13,7 +13,7 @@
 
 	<div class="buttons">
 		<!-- Theme switcher -->
-		<!-- <Toggle /> -->
+		<Toggle />
 
 		<!-- Hamburger button (mobile only) -->
 		<div class="hamburger">
