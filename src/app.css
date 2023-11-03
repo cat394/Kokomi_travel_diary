@@ -30,7 +30,7 @@ html {
 	--mobile-nav-bg-light: var(--primary-light);
 
 	/* halloween */
-	--primary-dark: var(--yellow-6);
+	/* --primary-dark: var(--yellow-6);
 	--bg-primary-dark: linear-gradient(
 		180deg,
 		rgba(211, 76, 47, 1) 0%,
@@ -50,7 +50,7 @@ html {
 	);
 	--bg-secondary-light: hsl(var(--purple-12-hsl) / 90%);
 	--text-primary-light: var(--yellow-1);
-	--text-secondary-light: var(--yellow-8);
+	--text-secondary-light: var(--yellow-8); */
 }
 
 :root {

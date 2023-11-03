@@ -14,16 +14,16 @@
 
 	import '../app.css';
 
-	// export let data;
+	export let data;
 </script>
 
 <div class="layout">
 	<Header />
 	<Nav />
 	<main>
-		<!-- <Transition url={data.url} duration={740}> -->
+		<Transition url={data.url} duration={740}>
 			<slot />
-		<!-- </Transition> -->
+		</Transition>
 	</main>
 	<MobileNav />
 	<Footer />
@@ -41,7 +41,7 @@
 		min-height: 100vh;
 		display: grid;
 		grid-template-rows: auto auto 1fr auto;
-		background-image: url('/images/halloween_bg.webp');
+		/* background-image: url('/images/halloween_bg.webp'); */
 	}
 
 	@media (max-width: 768px) {

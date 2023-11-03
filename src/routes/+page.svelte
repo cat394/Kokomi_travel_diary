@@ -21,7 +21,7 @@
 </svelte:head>
 
 <Hero textPosition="right">
-	<Image slot="media" name="root:home_hero_halloween" />
+	<Image slot="media" name="root:home_hero" />
 	Kokomiのブログ
 </Hero>
 <Divider />

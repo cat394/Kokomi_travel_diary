@@ -27,8 +27,8 @@
 		transition: all 300ms;
 
 		/* halloween */
-		background: var(--orange-8);
-		box-shadow: 0px 5px 0px 0px var(--orange-12);
+		/* background: var(--orange-8);
+		box-shadow: 0px 5px 0px 0px var(--orange-12); */
 	}
 
 	.link-btn:hover {
@@ -36,6 +36,6 @@
 		box-shadow: 0px 2px 0px 0px var(--gray-5);
 
 		/* halloween */
-		box-shadow: 0px 2px 0px 0px var(--yellow-12);
+		/* box-shadow: 0px 2px 0px 0px var(--yellow-12); */
 	}
 </style>

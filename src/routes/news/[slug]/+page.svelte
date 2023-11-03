@@ -24,7 +24,7 @@
 		border-radius: var(--radius-2);
 
 		/* halloween */
-		background-color: var(--purple-12);
+		/* background-color: var(--purple-12); */
 	}
 
 	h1 {

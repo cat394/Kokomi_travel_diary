@@ -38,8 +38,8 @@
 		text-shadow: 0 0 10px rgb(255, 255, 255);
 
 		/* halloween */
-		color: var(--gray-0);
-		text-shadow: 4px 3px 0px var(--purple-7);
+		/* color: var(--gray-0);
+		text-shadow: 4px 3px 0px var(--purple-7); */
 	}
 
 	@media (min-width: 768px) {

@@ -14,7 +14,7 @@
 </svelte:head>
 
 <Hero textPosition="right">
-	<Image slot="media" name="root:news_hero_halloween" />
+	<Image slot="media" name="root:news_hero" />
 	お知らせコーナー
 </Hero>
 <Divider />

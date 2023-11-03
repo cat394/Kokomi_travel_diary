@@ -1,7 +1,7 @@
 <script lang="ts">
-	import type { Post, News } from "$lib/types";
-	import Card from "$lib/components/utils/card/Card.svelte";
-	import CardBody from "$lib/components/utils/card//CardBody.svelte";
+	import type { Post, News } from '$lib/types';
+	import Card from '$lib/components/utils/card/Card.svelte';
+	import CardBody from '$lib/components/utils/card//CardBody.svelte';
 
 	export let contentsType: 'posts' | 'news' = 'posts';
 	export let items: Post[] | News[];

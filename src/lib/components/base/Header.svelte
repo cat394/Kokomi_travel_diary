@@ -2,7 +2,7 @@
 	import { AlignJustify } from 'lucide-svelte';
 	import { isMobileNavOpen } from '$lib/stores/mobileNavState';
 	import * as config from '$lib/config';
-	// import Toggle from '$lib/components/base/Toggle.svelte';
+	import Toggle from '$lib/components/base/Toggle.svelte';
 </script>
 
 <header>
@@ -42,19 +42,19 @@
 	}
 
 	b {
-		/* font-size: var(--font-size-lg); */
-		/* color: var(--primary); */
+		font-size: var(--font-size-lg); 
+		color: var(--primary);
 
 		/* halloween */
-		font-size: var(--font-size-7);
+		/* font-size: var(--font-size-7); */
 	}
 
 	/* halloween */
-	.title {
+	/* .title {
 		color: var(--gray-12);
 		text-shadow: 1px 1px var(--primary);
 		font-family: 'Creepster', cursive;
-	}
+	} */
 
 	.hamburger {
 		position: fixed;
@@ -62,7 +62,8 @@
 		right: 12px;
 		display: grid;
 		place-items: center;
-		color: yellow;
+		color: var(--primary);
+		border: 1.5px solid var(--text-primary);
 		background-color: var(--gray-10);
 		padding: var(--size-2);
 		border-radius: var(--radius-round);
@@ -83,7 +84,7 @@
 			border-bottom: 1px solid var(--text-secondary);
 
 			/* halloween */
-			border-bottom: 1.3px dashed white;
+			/* border-bottom: 1.3px dashed white; */
 		}
 
 		b {

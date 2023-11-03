@@ -17,7 +17,7 @@
 		cursor: pointer;
 
 		/* halloween */
-		background: var(--purple-11);
+		/* background: var(--purple-11); */
 	}
 
 	.card:hover {

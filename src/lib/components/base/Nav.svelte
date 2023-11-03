@@ -51,10 +51,10 @@
 		display: grid;
 		grid-template-columns: 0.25fr 1fr 0.25fr;
 		margin-block: var(--size-10);
-		/* border-bottom: 1px solid var(--gray-3); */
+		border-bottom: 1px solid var(--gray-3);
 
 		/* halloween */
-		background: var(--purple-11);
+		/* background: var(--purple-11); */
 	}
 
 	li {
@@ -87,7 +87,7 @@
 		text-align: center;
 
 		/* halloween */
-		color: var(--gray-0);
+		/* color: var(--gray-0); */
 	}
 
 	a:hover {

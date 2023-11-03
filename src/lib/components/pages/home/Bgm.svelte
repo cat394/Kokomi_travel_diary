@@ -2,10 +2,10 @@
 	import AudioBtn from '$lib/components/utils/audio/AudioBtn.svelte';
 
 	const bgm = {
-		title: 'Pumpkin march',
-		artist: 'Make a field music',
-		src: '/audio/pumpkin_march.mp3',
-		thumbImage: '/images/bgmThumbs/halloween.webp'
+		title: '夢花火',
+		artist: 'yuhei komatsu',
+		src: '/audio/yumehanabi.mp3',
+		thumbImage: '/images/bgmThumbs/yumehanabi.webp'
 	};
 </script>
 

@@ -65,7 +65,7 @@ export const imageData: FolderData[] = [
 				title: 'きれいな音楽の背景(赤)',
 				artist: 'OKUMOTO',
 				artistLink: 'https://sozaino.site/',
-				fileName: 'rss_hero',
+				fileName: 'news_hero',
 				alt: '音符の入った赤色の淡いグラデーションを背景にして学生服のKokomiがいる',
 				width: 800,
 				height: 433

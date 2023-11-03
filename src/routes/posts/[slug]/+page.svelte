@@ -56,7 +56,7 @@
 		border-radius: var(--radius-2);
 
 		/* halloween */
-		background-color: var(--purple-12);
+		/* background-color: var(--purple-12); */
 	}
 
 	h1 {
@@ -65,7 +65,7 @@
 		font-size: var(--font-size-md);
 
 		/* halloween */
-		color: var(--yellow-3);
+		/* color: var(--yellow-3); */
 	}
 
 	h1 + p {

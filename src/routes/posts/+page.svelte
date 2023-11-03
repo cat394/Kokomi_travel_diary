@@ -17,7 +17,7 @@
 </svelte:head>
 
 <Hero textPosition="right">
-	<Image slot="media" name="root:posts_hero_halloween" />
+	<Image slot="media" name="root:posts_hero" />
 	記事いちらん
 </Hero>
 <Divider />
