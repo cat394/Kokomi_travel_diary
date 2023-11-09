@@ -92,7 +92,7 @@
 		}
 
 		.buttons {
-			padding-right: var(--size-10);
+			padding-right: var(--size-8);
 		}
 	}
 
