@@ -90,6 +90,10 @@
 		b {
 			font-size: var(--font-size-md);
 		}
+
+		.buttons {
+			padding-right: var(--size-10);
+		}
 	}
 
 	@media (min-width: 769px) {
