@@ -23,6 +23,13 @@ const audioDetails: Omit<BeforeFormatDetail, 'src'>[] = [
 		artist: 'Make a field Music',
 		artistLink: 'https://dova-s.jp/_contents/author/profile164.html',
 		fileName: 'pumpkin_march'
+	},
+	{
+		id: 3,
+		title: 'スノーマン',
+		artist: 'yuhei komatsu',
+		artistLink: 'https://free-blo.com/',
+		fileName: 'snow_man'
 	}
 ];
 

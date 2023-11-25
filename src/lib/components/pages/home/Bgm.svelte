@@ -2,16 +2,16 @@
 	import AudioBtn from '$lib/components/utils/audio/AudioBtn.svelte';
 
 	const bgm = {
-		title: '夢花火',
+		title: 'スノーマン',
 		artist: 'yuhei komatsu',
-		src: '/audio/yumehanabi.mp3',
-		thumbImage: '/images/bgmThumbs/yumehanabi.webp'
+		src: '/audio/snow_man.mp3',
+		thumbImage: '/images/bgmThumbs/snow_man.webp'
 	};
 </script>
 
 <AudioBtn {...bgm} />
 <p>
-	この曲は夏の終わりをイメージした曲で、もう11月だから冬の始まりを感じられるようなBGMに更新するつもりだけど、ちょっと待っててね。
+	だんだん寒くなってきて冬がやって来るのを感じるよね。ということで、ちょっと早いかもしれないけど、今回は冬に雪が降っている様子を可愛くてポップに表現した曲になっているよ。<br />それを聴きながら私のブログを楽しんでくれるといいな♪
 </p>
 
 <style>
